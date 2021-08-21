@@ -23,21 +23,19 @@ function render() {
     tab.appendChild(home());
     content.appendChild(tab);
 
-
     content.appendChild(footer());
 
-    console.log(homeBtn);
-    // homeBtn.addEventListener('click',e => {
-    //     tab.removeChild(tab.childNodes[0]);
-    //     tab.appendChild(home);
-    // });
+    homeBtn.addEventListener('click',e => {
+        tab.removeChild(tab.firstChild);
+        tab.appendChild(home());
+    });
     menuBtn.addEventListener('click', e => {
         tab.removeChild(tab.firstChild);
-        tab.appendChild(menu);
+        tab.appendChild(menu());
     });
     contactBtn.addEventListener('click' ,e => {
         tab.removeChild(tab.firstChild);
-        tab.appendChild(contact);
+        tab.appendChild(contact());
     })
 }
 
