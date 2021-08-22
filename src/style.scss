@@ -1,6 +1,14 @@
-// @import "~bootstrap/scss/bootstrap";
+$primary:#f8edeb;
+
+
+
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 #content{
     min-height: 100vh;
+}
+
+.cursor-pointer{
+    cursor: pointer;
 }

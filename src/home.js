@@ -7,13 +7,18 @@ export default function home() {
     const location = document.createElement('p');
 
 
-    about.innerText = "We make the Biriyani way";
+    about.innerText = "We make them Biriyani. We make it good.";
     hoursHeading.innerText = "Working Hours";
     locationHeading.innerText = "Location";
     location.innerText = "1023, Dream Blvd, San."
 
     ul.classList.add('list-unstyled');
-    home.classList.add('container','d-flex','flex-column','align-items-center','justify-content-center');
+    home.classList.add('d-flex','flex-column','align-items-center','justify-content-center','p-5');
+
+    about.classList.add('fs-5');
+    location.classList.add('fs-5');
+    hoursHeading.classList.add('display-6','fw-bold','mt-3');
+    locationHeading.classList.add('display-6','fw-bold','mt-3');
 
 
     const workingTimes = [
@@ -29,6 +34,7 @@ export default function home() {
     workingTimes.forEach(time => {
         const li = document.createElement('li');
         li.innerText = time;
+        li.classList.add('fs-5');
         ul.appendChild(li);
     });
 
