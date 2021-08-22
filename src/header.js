@@ -12,11 +12,13 @@ export default function header() {
     contactLi.id = "contact";
 
     // Adding Bootstrap Classes
-    nav.classList.add('container','d-flex','align-items-center','justify-content-between','p-3');
-    siteHeader.classList.add('display-6','cursor-pointer','text-light');
-    ul.classList.add('d-flex','list-unstyled');
-    menuLi.classList.add('fs-4','mx-2','cursor-pointer','text-light');
-    contactLi.classList.add('fs-4','mx-2','cursor-pointer','text-light');
+    nav.classList.add('mt-2','container','d-flex','align-items-center','justify-content-between','p-2','glass','rounded-3');
+    siteHeader.classList.add('display-6','cursor-pointer','text-white');
+    ul.classList.add('d-flex','list-unstyled','my-0');
+    menuLi.classList.add('fs-3','mx-4','cursor-pointer','text-white','text-shadow');
+    contactLi.classList.add('fs-3','mx-4','cursor-pointer','text-white','text-shadow');
+
+    // Custom CSS Classes
 
     // Adding the Text Content
     siteHeader.innerText = "The Biriyani Way";
@@ -27,6 +29,23 @@ export default function header() {
     ul.appendChild(menuLi);
     ul.appendChild(contactLi);
     
+    // Mouseover Effect
+    menuLi.onmouseover = () => {
+        menuLi.classList.replace('text-white','text-primary');
+    }
+    menuLi.onmouseout = () => {
+        menuLi.classList.replace('text-primary','text-white');
+    }
+
+    contactLi.onmouseover = () => {
+        contactLi.classList.replace('text-white','text-primary');
+    }
+    contactLi.onmouseout = () => {
+        contactLi.classList.replace('text-primary','text-white');
+    }
+
+
+
     // Final Header DOM structure
     nav.appendChild(siteHeader);
     nav.appendChild(ul);

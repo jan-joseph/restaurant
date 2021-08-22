@@ -13,7 +13,7 @@ export default function home() {
     location.innerText = "1023, Dream Blvd, San."
 
     ul.classList.add('list-unstyled');
-    home.classList.add('d-flex','flex-column','align-items-center','justify-content-center','p-5');
+    home.classList.add('container','d-flex','flex-column','align-items-center','justify-content-center','p-5','glass','rounded-pill');
 
     about.classList.add('fs-5');
     location.classList.add('fs-5');

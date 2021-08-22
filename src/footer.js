@@ -4,8 +4,8 @@ export default function footer () {
 
     copyright.innerText = "Copyright 2021 The Biriyani Way";
 
-    copyright.classList.add('text-light','fs-6');
-    footer.classList.add('d-flex','align-items-center','justify-content-center','p-3');
+    copyright.classList.add('text-light','fs-6','my-0','p-2','glass', 'rounded-pill');
+    footer.classList.add('d-flex','align-items-center','justify-content-center');
     
     footer.appendChild(copyright);
 
