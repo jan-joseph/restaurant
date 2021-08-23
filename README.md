@@ -8,7 +8,7 @@
 ## Points to improve
 --------------------
 1. General UI
-2. Save the Tab selected in Local Storage for continuity
+~~2. Save the Tab selected in Local Storage for continuity~~
 
 ## Site
 --------------------
