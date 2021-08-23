@@ -20,7 +20,6 @@ function render() {
     const tab = document.createElement('div');
     
     const storedOption = getFromStorage();
-    console.log("Stored" + storedOption);
 
     // Adding the Header Component
     content.appendChild(header());
